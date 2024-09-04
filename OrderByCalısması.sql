@@ -41,3 +41,10 @@ select OrderID, sum(UnitPrice*Quantity) from [Order Details] group by OrderID
 
 	-- Hangi kategoride toplam nekadarlık ürün var
 	select CategoryID,sum(UnitPrice) from Products group by CategoryID
+
+
+	select CategoryID,sum(UnitsInStock) from Products GROUP BY CategoryID 
+
+	select OrderID,SUM(Quantity*UnitPrice) from [Order Details] GROUP BY OrderID
+
+	select EmployeeID ,count(ShipCity) from Orders group by EmployeeID
